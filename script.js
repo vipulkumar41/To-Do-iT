@@ -23,12 +23,12 @@ addTaskButton.addEventListener("click", (e) => {
    function searchh(){
      const keys = document.getElementById("key").value.toUpperCase();
      if(todoArray.indexOf(keys.value)== -1){
-       return false;
+       todoArray = [];
      }
      else{
        for(var i=0; i<todoArray.length;i++){
         document.getElementById("key").innerHTML = todoArray.filter(keys);
-
+         displaykeys();
        }
      }
    }
