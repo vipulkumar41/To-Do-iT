@@ -32,6 +32,13 @@ addTaskButton.addEventListener("click", (e) => {
        }
      }
    }
+   
+   function displaykeys(){
+     for(var i=0; i<todoArray.length;i++){
+       alert(todoArray[i]);
+     }
+   }
+
 
    function displayTodo() {
     let todo = localStorage.getItem("todo");
